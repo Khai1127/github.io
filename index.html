@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   <style>
+    img {padding-top: 10px;
+    padding-bottom:10px}
+    n {color: red}
+   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hướng dẫn truy suất rơ le SELL </title>
+</head>
+<body>
+    <h3>
+        Chào các bạn, hiện nay tại các nhà máy điện và trạm điện đang vận hành sử dụng rất nhiều các role và các chức năng khác nhau: mình chia sẻ cách truy cập và lấy dữ liệu từ <n>role Sell</n> nhé!
+
+    </h3>
+    <ol>
+        <li>
+            <h4>
+                Sự chuẩn bị cần thiết:
+            </h4>
+            <ul style="list-style-type:square">
+                <li>
+                    Laptop đã cài sẵn phần mềm Quickset
+                   
+                </li>
+                <li>
+                    Cáp kết nối (các bạn mua đủ cả 2 loại cáp này mới kết nối được nhé: <a href="https://s.shopee.vn/8fFQwbUHJ3" target="_blank">Cáp Chuyển USB 2.0 to RS232 Ugreen 20211</a> và <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjz-M6tqv-MAxXZxUwCHaidDfQYABAgGgJ0bQ&co=1&gclid=Cj0KCQjwlMfABhCWARIsADGXdy-C-YTq9wIwFFHVU6oByv6mwC5Mh5K5c0AIANSxQ3ILBJbipjcxMU8aAk6hEALw_wcB&ohost=www.google.com.vn&cid=CAESVeD2_frhUP2uZfOMlCDD8vdAUo2QQtIJI97E4rgQZtx3M6xkGyI4K4pN2AAJr-YdeULyVG8CUZb8rNU1wA0zUlZzCGuhbjMzWK07fLZGXjJBXGnTets&sig=AOD64_2WkZn1EfMSjwT_Qr7I1QStuRN6Cg&ctype=5&q=&ved=2ahUKEwibtMitqv-MAxWMr1YBHZFrFmoQ9aACKAB6BAgJEDQ&adurl=" target="-blank">Cáp chéo DB9 đực cái</a>)
+                </li> <br/>
+            </ul>
+        </li>
+        <li>
+            Các bước thực hiện: <br/><br/>
+            <div>
+                Bước 1: kết nối cáp truyền thông giữa role với máy tính, cách kiểm tra như sau: <br/>
+                <i>1.1</i> &nbsp;&nbsp;Click chuột phải vào <b>Computer</b>, chọn <b>Manage</b> : <br/> 
+                <img src=".//media/mycomputer.jpg" style=" width: 1000px; height:500px";> <br/>
+             <i>1.2 </i>&nbsp;&nbsp; Chọn <b>Device Maneger-Port (Com & LPT) :</b> <br/>
+             <img src=".//media/device maneger.jpg" style="width:1000 px;height:540px;"> <br/>
+                <p style="margin:0";>Nếu hiện SEL CP210x USB to UART Bridge (Com 11) thì việc kết nối đã thành công.</p> <br/>
+                <p style="margin:0";>Bước 2: Truy cập vào phần mềm AcSELerator QuickSets</p><br/>
+                <i>2.1 </i>&nbsp;&nbsp; Click đúp vào biểu tượng <img src=".//media/biểu tượng phần mềm quickset.jpg">để khởi động phần mềm. <br/>
+                <i>2.2 </i>	&nbsp;&nbsp;Sau khi phần mềm hoàn tất khởi động có giao diện như sau: <br/>
+                <img src=".//media/giao diện phần mềm quickset.jpg" style="width:1000px;height:500px;"><br/>
+    
+                <i>2.3</i>&nbsp;&nbsp; Chọn communication: <br/>
+                <img src=".//media/communication.jpg" style="width:1000px;weight:500px;"><br/>
+                Cài đặt thông số như sau:<br/>
+                <ul>
+                    <li>	Active connection type: Serial ;</li>
+                    <li>	Device: Chọn cổng Com đã kết nối ở bước 1;</li>
+                    <li>	Data speed: 38400;</li>
+                    <li>	Các mục còn lại để mặc định;</li>
+                    <li>	Chọn Apply - Ok.</li>
+
+                </ul> <br/>
+                <i>2.4</i>&nbsp;&nbsp;	Chọn <b>Tool - Event - Get event file </b> <br/>
+                <img src=".//media/tool.jpg " style="width:1000px;height:500px;"><br/>
+                <i>2.5</i>&nbsp;&nbsp;Sau khi chọn <b>Get Event File</b> giao diện của phần mềm như sau: <br/>
+                <img src=".//media/get event file.jpg" style="width:1000px;height:500px;"
+            </div>
+            <div>
+                Phần <b>Event History </b>là danh sách các sự cố đã xảy ra. Chọn sự cố muốn tải về và chọn <b>Get Select Event</b> <br/><br/>
+                <i>2.6</i>&nbsp;&nbsp;	 Sau khi chọn <b>Get Select Event</b> giao diện của phần mềm như sau: <br/>
+                <img src=".//media/chọn sự cố.jpg" style="width:1000px;height:500px;"> <br/>
+                Mục <b>Save Location</b> chọn thư mục lưu, chọn <b>Save</b>
+            </div>
+        </li>
+    </ol>
+    
+</body>
+</html>
